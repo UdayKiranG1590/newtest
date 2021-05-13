@@ -1,0 +1,13 @@
+loop do
+    print("enter the number:")
+    num=gets.to_i
+    if num%2==0
+        puts("#{num} is even")
+        print("Do you want to enter other number:")
+        d=gets.chomp
+        break if d=="N" or d=="n"
+    else
+        puts("#{num} is odd")
+        break
+    end
+end
